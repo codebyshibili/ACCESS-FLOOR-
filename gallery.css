@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.aboutweb-container{
+    width: 100%;
+    height: auto;
+}
+
+/* ..............navbar.................. */
+
+.navbar-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45,42,99);
+}
+.navlogo-section{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+}
+.navlogo-section img{
+    width: 70%;
+}
+.menu-icon{
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+.nav-menu{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: chartreuse; */
+}
+.nav-menu P{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: whitesmoke;
+}
+/* ....................gallery.................................. */
+.gallery-container{
+    width: 100%;
+    height: auto;
+}
+.gallery-title{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: aqua;
+}
+
+.grid-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    background-color: white;
+}
+.item1 {
+    grid-column: 1 / 3; /* Occupies first column */
+    grid-row: 1 / 4; /* Spans two rows */
+    background-color: lightcoral;
+    background-image: url(Access-images/gallery-1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-color: chartreuse;
+    background-image: url(Access-images/gallery-2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item3{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    background-color: rgb(30, 186, 207);
+    background-image: url(Access-images/galley-3.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item4{
+    grid-column: 3/ 5;
+    grid-row: 2 / 4;
+    background-color: rgb(207, 30, 80);
+    background-image: url(Access-images/galley-4.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item5{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: rgb(30, 186, 207);
+    background-image: url(Access-images/gallery-5.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item6{
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    background-color: chartreuse; 
+    background-image: url(Access-images/gallery-6.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item7{
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    background-color: rgb(86, 15, 192); 
+    background-image: url(Access-images/gallery-7.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.item8{
+    grid-column: 3 / 5; /* Occupies first column */
+    grid-row: 1 / 4; /* Spans two rows */
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Access-images/gallery-8.jpg);
+    background-size: cover;
+}
+.item-content{
+    text-align: center;
+    color: white;
+    opacity: 0;
+}
+.item-content h3{
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item-content p{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+/* ................................. */
+.item1:hover{
+    background-image: none;
+    background-color: rgb(45,42,99);
+}
+.item1:hover .item-content{
+    opacity: 1;
+}
+
+.item2:hover{
+    background-image: none;
+    background-color: rgb(45,42,99);
+}
+.item2:hover .item-content{
+    opacity: 1;
+}
+
+.item3:hover{
+    background-image: none;
+    background-color: rgb(45,42,99);
+}
+.item3:hover .item-content{
+    opacity: 1;
+}
+
+.item4:hover{
+    background-image: none;
+    background-color: rgb(45,42,99);
+}
+.item4:hover .item-content{
+    opacity: 1;
+}
+
+.item5:hover{
+    background-image: none;
+    background-color: rgb(45,42,99);
+}
+.item5:hover .item-content{
+    opacity: 1;
+}
+
+.item6:hover{
+    background-image: none;
+    background-color: rgb(45,42,99);
+}
+.item6:hover .item-content{
+    opacity: 1;
+}
+
+.item7:hover{
+    background-image: none;
+    background-color: rgb(45,42,99);
+}
+.item7:hover .item-content{
+    opacity: 1;
+}
+
+.item8:hover{
+    background-image: none;
+    background-color: rgb(45,42,99);
+}
+.item8:hover .item-content{
+    opacity: 1;
+}
+/* .................footer........................... */
+
+.footer {
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+ }
+ 
+ .footer-content {
+     width: 90%;
+     height: 80%;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     font-family: sans-serif;
+     background-color:black;
+ }
+ .footer-content img{
+     width: 25%;
+ }
+ .footer-section h3 {
+     font-size: 1.2em;
+     margin-bottom: 4%;
+     margin-top: 3%;
+     font-weight: bold;
+     color: whitesmoke;
+ }
+ 
+ .footer-section ul {
+     list-style: none;
+    
+ }
+ 
+ 
+ .footer-section ul li a {
+     color:rgb(45,42,99);
+     text-decoration: none;
+     transition: color 0.3s;
+     font-size: 1rem;
+     font-weight: bold;
+ }
+ .footer-section ul li {
+     margin-top: 5%;
+ }
+ 
+ .contact-info {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .contact-info p {
+     margin-bottom: 10%;
+     font-size: 1rem;
+     font-weight: bold;
+     color: white;
+ }
+ .contact-info h3{
+     margin-top: 2%;
+     margin-bottom: 15%;
+ }
+ 
+ .contact-info a {
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .footer-bottom {
+     width: 90%;
+     height: 20%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-top: 2px solid #444;
+     background-color: black;
+     color: whitesmoke;
+     font-weight: bold;
+     font-family: sans-serif;
+     font-size: 1rem;
+ }
