@@ -46,3 +46,30 @@ container.addEventListener('mouseenter', () => {
     });
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Array of background images for each project box
+  const backgrounds = [
+      'url("Access-images/service-1.jpg")',
+      'url("Access-images/service-2.jpg")',
+      'url("Access-images/service-3.jpg")',
+      'url("Access-images/service-4.png")',
+  ];
+
+  // Select all elements with the class 'project-box'
+  const projectBoxes = document.querySelectorAll('.service-box');
+
+  // Loop through each project box and set the background image from the array
+  projectBoxes.forEach((box, index) => {
+      if (backgrounds[index]) { // Check if there's a background image for this box
+          box.style.backgroundImage = backgrounds[index];
+      }
+  });
+});
+
+
+
+function navigateToPage() {
+  window.location.href = "about.html";
+}

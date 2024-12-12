@@ -41,11 +41,12 @@
     justify-content: space-evenly;
     /* background-color: chartreuse; */
 }
-.nav-menu P{
+.nav-menu a{
     font-size: 16px;
     font-family: sans-serif;
     font-weight: 500;
     color: whitesmoke;
+    text-decoration: none;
 }
 /* ....................gallery.................................. */
 .gallery-container{
@@ -62,6 +63,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     background-color: aqua;
+    background-image: url(Access-images/gallery-bg.jpg);
+    background-size: cover;
 }
 
 .grid-container {
