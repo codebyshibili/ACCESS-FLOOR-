@@ -61,22 +61,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    gap: 5%;
     background-color: whitesmoke;
     background-image: url(Access-images/banner\ bg_11zon.jpg);
-    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .banner-container h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 56px;
     color:whitesmoke;
 }
-.banner-container p{
-    font-family: sans-serif;
-    font-size: 22px;
-    color:whitesmoke;
-}
+
 /* ................about............................ */
 
 .about-container{
@@ -393,3 +388,155 @@
      font-size: 1rem;
  }
  
+
+
+
+
+
+
+
+ @media (max-width:426px){
+
+        /* nav */
+
+        .navbar-container{
+            height: 80px;
+        }
+        .menu-icon{
+            display: block;
+            margin-right: 5%;
+            align-self: center;
+        }
+        .navlogo-section{
+            width: 30%;
+        }
+        .navlogo-section img{
+            width: 100px;
+        }
+        .nav-menu{
+            display: none;
+        }
+
+        /* banner */
+        .banner-container{
+             height: 50vh;
+        }
+
+        /* about */
+        .about-container{
+            height: 180vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .about-content{
+            width: 100%;
+            height: 60%;
+        }
+        .about-imagesection{
+            width: 100%;
+            height: 45%;
+        }
+        .about-imagesection img{
+            width: 90%;
+            height: 90%;
+        }
+
+        /* services */
+
+        .services{
+            height: 250vh;
+        }
+        .service-title{
+            height: 150px;
+        }
+        .services-grid{
+            height: 85%;
+            display: grid;
+            grid-template-columns: repeat(1, 4fr);
+            display: flex;
+            flex-direction: column;
+            /* background-color: aqua; */
+        }
+        .service-box {
+            width: 90%;
+            height: 30%;
+        }
+
+        /* why */
+
+        .detail-container{
+            gap: 8%;
+            height: 50vh;
+        }
+        .detail-title{
+            font-size: 22px;
+        }
+        .detailcard-container{
+            gap:5%;
+        }
+    
+        .detail-card{
+            width: 200px;
+            height:200px; 
+        }
+        .detail-card img{
+            width: 40px;
+        }
+        .detail-card h2{
+            font-size: 38px;
+        }
+        .detail-card p{
+            font-size:24px;
+        }
+
+        
+         /* suppliers */
+         .suppliers-container{
+             height: 50vh;
+        }
+         .suppliers-container h2{
+            font-size: 32px;
+        }
+        .suppliers-container img{
+            width: 20%;
+        }
+
+           /* foooter */
+    
+        .footer {
+            height: auto;
+         }
+        .footer-content{
+            flex-direction: column;
+            align-items: flex-start;
+    
+        }
+        .footer-section h3 {
+            margin-top: 8%;
+        }
+        .footer-bottom {
+            align-items: center;
+            font-size:12px ;
+            margin-top: 8%;
+            margin-bottom: 5%;
+            padding-top: 5%;
+        }
+}
+
+
+
+
+@media (max-width:376px){
+       
+        /* about */
+        .about-content p{
+            font-size: 18px;
+        }
+        .about-container{
+            height: 160vh;
+        }
+}
+ 
+
+
+

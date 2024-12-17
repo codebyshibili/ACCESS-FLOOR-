@@ -20,7 +20,7 @@
 }
 .nav-banner-container{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-color: rgb(64, 67, 66);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
@@ -36,7 +36,7 @@
         background-image: url(Access-images/Belgotex-Colour-Rib-Lifestyle.jpg);
     }
     80%{
-        background-image: url(Access-images/649fe2e8882782a8aad61019_tulle-wtw-metal-hotel-room.webp);
+        background-image: url(Access-images/form-image_11zon.png);
     }
     100%{
         background-image: url(Access-images/banner\ bg_11zon.jpg); 
@@ -96,6 +96,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-left: 4%;
     /* background-color: burlywood; */
 }
@@ -268,7 +269,7 @@
 /* ....................product................................. */
 .productpage-container{
     width: 100%;
-    height: 230vh;
+    height: 270vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -285,15 +286,11 @@
     background-color:rgb(45,42,99);
     color: white;
 }
-
-.section {
-    width: 90%;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    /* background-color: rgb(64, 34, 218); */
+.container {
+    width: 100%;
+    height: 95%;
+    /* background-color: aqua; */
 }
-
 .section-title{
     width: 100%;
     height: 100px;
@@ -302,68 +299,46 @@
     justify-content: center;
     font-size: 26px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
     color: rgb(45,42,99);
     /* background-color: beige; */
 }
-.product-grid {
-    width: 100%;
-    height: 85%;
+
+.row {
     display: flex;
+    justify-content: center;
     gap: 20px;
-    justify-content: space-between;
-    /* background-color: blueviolet; */
 }
 
-.product-card {
-    width: 30%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    /* background-color: burlywood; */
-    border-radius: 25px;
-    overflow: hidden;
-    border: none;
-}
-.belgotex-card{
-    width: 47%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    background-color: burlywood;    
-    border-radius: 25px;
-    overflow: hidden;
-    border: none;
-}
-.img-placeholder {
-    width: 100%;
-    height:75%;
-}
-.img-placeholder img{
-    width: 100%;
-    height: 100%;
-}
-.product-content{
-    width: 100%;
-    height: 25%;
+.column {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(45,42,99);
-    color: white;
-    gap: 5%;
-}
-.product-content h4{
-    font-size: 22px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.product-content p{
-    font-size: 18px;
-    font-family: sans-serif;
-    color: gray;
+    gap: 15px;
 }
 
+.box {
+    width: 400px;
+    height: 350px;
+    background-color: #e0e0e0;
+    border: 5px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box img{
+    width: 100%;
+    height: 80%;
+}
+.box-content{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 /* ................why.......................... */
 .whypage-container{
     width: 100%;
@@ -456,7 +431,6 @@
     /* background-color: rgb(40, 21, 207); */
     background-size:cover;
     background-repeat: no-repeat;
-    background: inherit; 
     filter: blur(2px);
     animation: appear  linear;
     animation-timeline: view();
@@ -464,7 +438,6 @@
   
 }
 .project-box:hover{
-   background: inherit; 
    filter: blur(0px);
    transition: filter 0.3s ease;
    background-size: cover;
@@ -784,6 +757,7 @@
     }
     .banner-container h1{
         font-size: 24px;
+        margin-top: 40%;
     }
     .banner-container button{
         width: 100px;
@@ -810,23 +784,31 @@
         justify-content: flex-start;
     }   
      .about-imagesection img {
-        width: 350px;
+        width: 380px;
+        height: 300px;
     }
 
     /* details */
     .detail-container{
         gap: 8%;
-        height: 100vh;
+        height: 50vh;
+    }
+    .detail-title{
+        font-size: 22px;
     }
     .detailcard-container{
         gap:5%;
     }
+
     .detail-card{
         width: 200px;
         height:200px; 
     }
+    .detail-card img{
+        width: 40px;
+    }
     .detail-card h2{
-        font-size: 52px;
+        font-size: 38px;
     }
     .detail-card p{
         font-size:24px;
@@ -835,12 +817,15 @@
     .productpage-container{
         height: 590vh;
     }
+    .product-title{
+        font-size: 28px;
+    }
     .section{
         width: 100%;
         height: 190vh;
     }
     .section-title{
-        font-size: 20px;
+        font-size: 22px;
     }
     .product-grid {
         display: flex;
@@ -848,31 +833,38 @@
         flex-direction: column;
     }
     .product-card{
-        width: 90%;
+        width: 80%;
         height: 80%;
     }
     .belgotex-card{
-        width: 90%;
+        width: 80%;
         height: 45%;
     }
     /* why */
     .whypage-container{
-            height:260vh;
+         height:210vh;
     
     }
     .whycard-container{
         width: 95%;
+        height: 80%;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         padding-left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .why-title{
-        height: 10%;
+        height: 150px;
     }
     .whycard{
-         width: 370px;
-         height: 300px;
-         gap: 3%;
+         width: 330px;
+         height: 420px;
+         gap: 1%;
+    }
+    .whycard img{
+        width: 90px;
     }
     .whycard h3{
            font-size: 18px;
@@ -978,14 +970,7 @@
     .about-imagesection img{
         width: 325px;
     }
-        /* details */
-    .detail-container{
-        gap: 8%;
-        height: 100vh;
-    }
-    .detailcard-container{
-        gap:5%;
-    }
+     /* details */
     .detail-card{
         width: 200px;
         height:200px; 
@@ -1000,8 +985,11 @@
         font-size:18px;
     }
     /* product */
+    .productpage-container{
+        height: 560vh;
+    }
     .product-title{
-        font-size: 32px ;
+        font-size: 28px ;
     }
     
     .product-content h4{
@@ -1010,7 +998,9 @@
     .product-content p{
         font-size: 14px;
     }
-    
+    .section-title{
+        font-size: 20px;
+    }
        /* why */
        .whypage-container{
         height:260vh;
@@ -1025,10 +1015,11 @@
     }
     .why-title{
         height: 10%;
+        font-size: 24px;
     }
     .whycard{
         width: 300px;
-        height: 300px;
+        height: 280px;
         gap: 3%;
     }
     .whycard h3{
@@ -1059,25 +1050,37 @@
         font-size: 30px;
     }
     .about-content p{
-        font-size:10px ;
+        font-size:11px ;
     }
     .about-content button{
         width: 100px;
         height: 30px;
     }
+
+    .productpage-container{
+        height: 540vh;
+    }
     .section-title{
         font-size: medium;
     }
-
+    .belgotex-card{
+        width: 80%;
+        height: 35%;
+        margin-top: 8%;
+        margin-bottom: 5%;
+    }
            /* why */
+        .whypage-container{
+            height:230vh;
     
+        }
         .why-title{
             height: 10%;
             font-size: 22px;
         }
         .whycard{
-            width: 280px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
             gap: 3%;
         }
         .whycard h3{

@@ -57,7 +57,9 @@
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 32px;
-    color: rgb(45,42,99);
+    color:white;
+    background-image: url(Access-images/AFT-TECH\ FS1000[1].jpg);
+    background-size: cover;
 }
 .contact-us {
     width: 100%;

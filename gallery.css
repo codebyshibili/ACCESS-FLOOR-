@@ -101,7 +101,7 @@
     grid-column: 4 / 5;
     grid-row: 1 / 2;
     background-color: rgb(30, 186, 207);
-    background-image: url(Access-images/galley-3.jpeg);
+    background-image: url(Access-images/about-section_11zon.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -123,7 +123,7 @@
     grid-column: 1 / 3;
     grid-row: 1 / 2;
     background-color: rgb(30, 186, 207);
-    background-image: url(Access-images/gallery-5.webp);
+    background-image: url(Access-images/Academia_Mantell_Install_web[1].jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -167,7 +167,7 @@
 .item-content{
     text-align: center;
     color: white;
-    opacity: 0;
+    opacity: 1;
 }
 .item-content h3{
     font-size: 26px;
@@ -177,70 +177,7 @@
     font-size: 18px;
     font-family: sans-serif;
 }
-/* ................................. */
-.item1:hover{
-    background-image: none;
-    background-color: rgb(45,42,99);
-}
-.item1:hover .item-content{
-    opacity: 1;
-}
 
-.item2:hover{
-    background-image: none;
-    background-color: rgb(45,42,99);
-}
-.item2:hover .item-content{
-    opacity: 1;
-}
-
-.item3:hover{
-    background-image: none;
-    background-color: rgb(45,42,99);
-}
-.item3:hover .item-content{
-    opacity: 1;
-}
-
-.item4:hover{
-    background-image: none;
-    background-color: rgb(45,42,99);
-}
-.item4:hover .item-content{
-    opacity: 1;
-}
-
-.item5:hover{
-    background-image: none;
-    background-color: rgb(45,42,99);
-}
-.item5:hover .item-content{
-    opacity: 1;
-}
-
-.item6:hover{
-    background-image: none;
-    background-color: rgb(45,42,99);
-}
-.item6:hover .item-content{
-    opacity: 1;
-}
-
-.item7:hover{
-    background-image: none;
-    background-color: rgb(45,42,99);
-}
-.item7:hover .item-content{
-    opacity: 1;
-}
-
-.item8:hover{
-    background-image: none;
-    background-color: rgb(45,42,99);
-}
-.item8:hover .item-content{
-    opacity: 1;
-}
 /* .................footer........................... */
 
 .footer {
@@ -323,3 +260,92 @@
      font-family: sans-serif;
      font-size: 1rem;
  }
+
+
+
+
+  /* .................................responsive............................................. */
+
+  @media (max-width:426px){
+    /* nav */
+
+    .navbar-container{
+      height: 80px;
+  }
+  .menu-icon{
+      display: block;
+      margin-right: 5%;
+      align-self: center;
+  }
+  .navlogo-section{
+      width: 30%;
+  }
+  .navlogo-section img{
+      width: 100px;
+  }
+  .nav-menu{
+      display: none;
+  }
+
+  /* gallery */
+
+  .grid-container{
+      height: 200vh;
+      grid-template-rows:1fr 1fr 1fr 1fr;
+      grid-template-columns:1fr 1fr 1fr 1fr;
+      background-color: azure;
+  }
+  .item1 {
+    grid-column: 1 / 5; /* Occupies first column */
+    grid-row: 1 /  2;/* Spans two rows */
+  }
+  .item2{
+    grid-column: 1 / 5;
+    grid-row: 2/ 3;
+  }
+  .item3{
+    grid-column: 1 / 5;
+    grid-row: 3/ 4;
+  }
+  .item4{
+    grid-column: 1 / 5;
+    grid-row: 4 / 6;
+  }
+  .item5{
+    grid-column: 1 / 5; /* Occupies first column */
+    grid-row: 1 /  2;/* Spans two rows */
+  }
+  .item6{
+    grid-column: 1 / 5;
+    grid-row: 2/ 3;
+  }
+  .item7{
+    grid-column: 1 / 5;
+    grid-row: 3/ 4;
+  }
+  .item8{
+    grid-column: 1 / 5;
+    grid-row: 4 / 6;
+  }
+
+    /* foooter */
+    
+    .footer {
+        height: auto;
+     }
+    .footer-content{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .footer-section h3 {
+        margin-top: 8%;
+    }
+    .footer-bottom {
+        align-items: center;
+        font-size:12px ;
+        margin-top: 8%;
+        margin-bottom: 5%;
+        padding-top: 5%;
+    }  
+}

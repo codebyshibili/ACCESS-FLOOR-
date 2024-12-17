@@ -234,3 +234,96 @@
      font-family: sans-serif;
      font-size: 1rem;
  }
+
+
+
+
+
+
+
+
+ /* .................................responsive............................................. */
+
+ @media (max-width:426px){
+      /* nav */
+
+      .navbar-container{
+        height: 80px;
+    }
+    .menu-icon{
+        display: block;
+        margin-right: 5%;
+        align-self: center;
+    }
+    .navlogo-section{
+        width: 30%;
+    }
+    .navlogo-section img{
+        width: 100px;
+    }
+    .nav-menu{
+        display: none;
+    }
+
+    /* banner */
+
+    .banner-title p{
+       font-size: 22px;
+       text-align: center;
+    }
+    .estimate-container{
+        flex-direction: column;
+        font-size: 14px;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 5%;
+    }
+    .estimate-container button{
+        width: 160px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    /* product */
+
+    .product-container{
+        height:auto;
+        gap: 10px;
+        grid-template-columns: repeat(1,1fr);  
+    }
+    .product-card{
+        width: 400px;
+        height: 400px;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .product-content{
+        gap: 5%;
+    }
+    .product-content h3{
+        font-size: 22px;
+    }
+    .product-content p{
+        font-size: 14px;
+    }
+      /* foooter */
+    
+      .footer {
+        height: auto;
+     }
+    .footer-content{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .footer-section h3 {
+        margin-top: 8%;
+    }
+    .footer-bottom {
+        align-items: center;
+        font-size:12px ;
+        margin-top: 8%;
+        margin-bottom: 5%;
+        padding-top: 5%;
+    }           
+ }
