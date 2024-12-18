@@ -223,7 +223,7 @@
  
  
  .footer-section ul li a {
-     color:rgb(45,42,99);
+     color:grey;
      text-decoration: none;
      transition: color 0.3s;
      font-size: 1rem;

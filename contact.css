@@ -318,7 +318,7 @@
       background-size: cover;
       color: grey;
       padding-top: 6%;
-      font-size: 22px;
+      font-size: 20px;
     }
     .contact-us {
       height: 150vh;
@@ -328,6 +328,12 @@
       width: 100%;
       height: 40%;
     }
+    .contact-inf h3{
+      font-size: 28px;
+     }
+     .contact-inf p{
+      font-size: 25px;
+     }
     .contact-form{
       width: 100%;
       height: 60%;
@@ -361,5 +367,45 @@
         margin-top: 8%;
         margin-bottom: 5%;
         padding-top: 5%;
+    }
+  }
+
+
+
+
+
+
+  @media (max-width:376px){
+
+     /* contact */
+     .contact-inf h3{
+      font-size: 25px;
+     }
+     .form-group input {
+      width: 350px;
+      text-align: center;
+    }
+  }
+
+
+
+  @media (max-width:321px){
+      /* contact */
+      .contact-inf h3{
+        font-size: 20px;
+       }
+       .contact-inf p{
+        font-size: 18px;
+       }
+       .form-group input {
+        width: 300px;
+        text-align: center;
+      }
+      button{
+        width: 150px;
+      }
+
+      .footer-bottom {
+         font-size: 10px;
     }
   }

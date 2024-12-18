@@ -1020,21 +1020,12 @@
         font-size:18px;
     }
     /* product */
-    .productpage-container{
-        height: 560vh;
-    }
-    .product-title{
-        font-size: 28px ;
-    }
-    
-    .product-content h4{
-        font-size: 18px;
-    }
-    .product-content p{
-        font-size: 14px;
+    .box{
+        width: 350px;
+        height: 300px;
     }
     .section-title{
-        font-size: 20px;
+        font-size: 18px;
     }
        /* why */
        .whypage-container{
@@ -1091,18 +1082,8 @@
         width: 100px;
         height: 30px;
     }
-
-    .productpage-container{
-        height: 540vh;
-    }
-    .section-title{
-        font-size: medium;
-    }
-    .belgotex-card{
-        width: 80%;
-        height: 35%;
-        margin-top: 8%;
-        margin-bottom: 5%;
+    .box{
+        width: 300px;
     }
            /* why */
         .whypage-container{
