@@ -10,43 +10,51 @@
 
 /* ..............navbar.................. */
 
+
 .navbar-container{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(45,42,99);
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(45,42,99);
+  position: fixed;
+  z-index: 1;
 }
 .navlogo-section{
-    width: 15%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: blueviolet; */
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blueviolet; */
 }
 .navlogo-section img{
-    width: 70%;
+  width: 100px;
 }
-.menu-icon{
-    width: 25px;
-    height: 25px;
-    display: none;
+.navbar-container label {
+  display: none;
+
 }
-.nav-menu{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    /* background-color: chartreuse; */
+#checking{
+  display: none;
 }
-.nav-menu a{
-    font-size: 16px;
-    font-family: sans-serif;
-    font-weight: 500;
-    color: whitesmoke;
-    text-decoration: none;
+.navbar-container label {
+  display: none;
+}
+
+.nav-items {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-items a{
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: whitesmoke;
+  text-decoration: none;
 }
 /* ..........contact...................... */
 .contact-title{
@@ -207,7 +215,7 @@
  
  
  .footer-section ul li a {
-     color:rgb(45,42,99);
+     color:grey;
      text-decoration: none;
      transition: color 0.3s;
      font-size: 1rem;
@@ -251,3 +259,107 @@
      font-family: sans-serif;
      font-size: 1rem;
  }
+
+  /* .................................responsive............................................. */
+
+  @media (max-width:426px){
+      /* nav */
+
+      .nav-items {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: rgb(45,42,99);
+        width: 60%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .nav-items a {
+        line-height: 10px;
+    }
+
+    .nav-items label {
+        position: absolute;
+        top: -1%;
+        right: 5%;
+    }
+    .nav-items label img{
+        margin-top: 50%;
+    }
+    .nav-items input {
+        display: block;
+    }
+
+    #checking:checked~.nav-items {
+        right: 0;
+    }
+
+
+    .navbar-container label {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .navbar-container label img{
+        width: 60%;
+    }
+    
+    /* contact */
+    .contact-title{
+      background-position:top;
+      background-size: cover;
+      color: grey;
+      padding-top: 6%;
+      font-size: 22px;
+    }
+    .contact-us {
+      height: 150vh;
+      flex-direction: column;
+    }
+    .contact-inf {
+      width: 100%;
+      height: 40%;
+    }
+    .contact-form{
+      width: 100%;
+      height: 60%;
+    }
+    .form-group {
+      flex-direction: column;
+    }
+    .form-group input {
+      width: 380px;
+      text-align: center;
+    }
+    iframe{
+      height: 50vh;
+    }
+       /* foooter */
+    
+       .footer {
+        height: auto;
+     }
+    .footer-content{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .footer-section h3 {
+        margin-top: 8%;
+    }
+    .footer-bottom {
+        align-items: center;
+        font-size:12px ;
+        margin-top: 8%;
+        margin-bottom: 5%;
+        padding-top: 5%;
+    }
+  }
