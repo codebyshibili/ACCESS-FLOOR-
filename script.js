@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Array of background images for each project box
   const backgrounds = [
-      'url("Access-images/form-image_11zon.png")',
+      'url("Access-images/p2.jpg")',
       'url("Access-images/banner bg_11zon.jpg")',
-      'url("Access-images/Academia_Mantell_Install_web[1].jpg")',
-      'url("Access-images/about-section_11zon.png")',
-      'url("Access-images/Belgotex-Colour-Rib-Lifestyle.jpg")',
+      'url("Access-images/product-2.jpg")',
+      'url("Access-images/form-image_11zon.png")',
+      'url("Access-images/p1.jpg")',
       'url("Access-images/African Skies - Neptune.png")'
   ];
 
