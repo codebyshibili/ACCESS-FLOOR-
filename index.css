@@ -802,7 +802,7 @@
     }
     .about-content p{
         font-size: 20px;
-        line-height: 22px;
+        line-height: 25px;
     }
     .about-imagesection{
         width: 100%;
@@ -954,7 +954,7 @@
     }
     
     .estimate-container button{
-        width: 40%;
+        width: 50%;
         padding: 2%;
         font-size: 12px;
         margin-top: 5%;
