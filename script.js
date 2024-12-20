@@ -73,3 +73,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function navigateToPage() {
   window.location.href = "about.html";
 }
+
+
+
+function navigatePage() {
+  window.location.href = "contact.html";
+}

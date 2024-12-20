@@ -33,7 +33,7 @@
         background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(Access-images/AFT-TECH\ FS1000[1].jpg);
     }
     40%{
-        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(Access-images/Belgotex-Colour-Rib-Lifestyle.jpg);
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(Access-images/banner\ bg_11zon.jpg);
     }
     80%{
         background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(Access-images/gallery-7.jpeg);
@@ -757,7 +757,7 @@
     
     @media (max-width:426px){
     .nav-banner-container{
-        height: 60vh;
+        height: 80vh;
     }
     /* nav */
     .menu-icon{
